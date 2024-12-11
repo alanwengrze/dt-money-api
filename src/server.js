@@ -1,3 +1,4 @@
+require("dotenv/config");
 require("express-async-errors");
 
 const express = require('express');
@@ -12,7 +13,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:5173'
+  origin: 'https://ignite-dt-money-nu.vercel.app/'
 }));
 
 app.use(routes);

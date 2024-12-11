@@ -8,6 +8,7 @@ exports.up = knex => knex.schema.createTable("transactions", table => {
     { useNative: true, enumName: "types" }).notNullable();
   table.timestamp("created_at").defaultTo(knex.fn.now());
   table.timestamp("updated_at").defaultTo(knex.fn.now());
+  table.text("user_id").notNullable();
 });
 
 //remover a tabela
