@@ -13,7 +13,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: 'https://ignite-dt-money-nu.vercel.app/'
+  origin: 'https://ignite-dt-money-nu.vercel.app'
 }));
 
 app.use(routes);
